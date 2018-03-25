@@ -1,0 +1,11 @@
+{
+  "name": "express-git",
+  "version": "1.0.0",
+  "description": "Creating REST API with express",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon"
+  },
+  "author": "",
+  "license": "ISC"
+}
