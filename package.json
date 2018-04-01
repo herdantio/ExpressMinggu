@@ -4,11 +4,14 @@
   "description": "Creating REST API with express",
   "main": "server.js",
   "scripts": {
-    "test": "nodemon"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
   }
 }
