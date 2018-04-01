@@ -15,6 +15,9 @@ app.get('/:name/:address',(req,res)=>{
         address
     });
 });
+app.get('*',(req,res)=>{
+    res.send('Page Not Found');
+});
 
 app.listen(3000,()=>{
     console.log('Listening from port 3000');
