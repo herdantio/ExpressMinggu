@@ -19,3 +19,7 @@ const getEmployee=(req,res)=>Employee.find().exec((err,result)=>{
         .json(result)
     }
 })
+
+module.exports={
+    getEmployee
+}
