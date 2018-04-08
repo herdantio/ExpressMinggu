@@ -33,4 +33,4 @@ process.on('SIGINT', () =>
     process.exit(0) )
 )
 
-require('./app/model/employee.model')
+require('../app/model/employee.model')

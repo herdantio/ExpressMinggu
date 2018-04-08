@@ -1,14 +1,15 @@
 const router=require('express').Router();
-const controller=require('../app/controller/user.controller')
+const userController=require('../app/controller/user.controller')
+const employeeController=require('../app/controller/employee.controller')
 
-router.get('/',controller.helloWorld);
+router.get('/',userController.helloWorld);
 
-router.get('/:name/:address',controller.nameAddress);
+//router.get('/:name/:address',userController.nameAddress);
 
 router
 .route('/employee')
-.get(controller.getEmployee)
-.post(controller.addEmployee);
+.get(employeeController.getEmployee)
+.post(userController.addEmployee);
 
 router.get('*',(req,res)=>{
     res.send('Page Not Found');
